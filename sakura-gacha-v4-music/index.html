@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сакура для Алины</title>
+  <meta name="description" content="Сакуровая коллекция открыток для Алины." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app" id="app">
+    <div class="bg bg-home" aria-hidden="true"></div>
+    <div class="bg bg-pull" aria-hidden="true"></div>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="logo">
+        <span class="logo-symbol">桜</span>
+        <span>Коллекция Алины</span>
+      </div>
+      <button class="tiny-button music-off" id="soundButton" type="button" aria-label="Включить музыку" title="Включить музыку">♫</button>
+    </header>
+
+    <main class="home">
+      <section class="hero">
+        <p class="overline">для моей любимой жены</p>
+        <h1 id="greetingTitle">Алина, ты моё чудо.</h1>
+        <p class="note" id="greetingNote">Этот маленький сад цветёт ради твоей улыбки.</p>
+
+        <div class="cooldown">
+          <span>Следующее открытие через</span>
+          <strong id="timer">24:00:00</strong>
+        </div>
+
+        <button class="main-button" id="pullButton" type="button">
+          <span></span>
+          Открыть подарок
+        </button>
+      </section>
+    </main>
+
+    <section class="pull" id="pull" aria-hidden="true">
+      <div class="pull-vignette"></div>
+
+      <div class="stage" id="stage">
+        <div class="scene-label" id="sceneLabel">Цветение судьбы</div>
+
+        <div class="portal" id="portal">
+          <div class="portal-arc arc-a"></div>
+          <div class="portal-arc arc-b"></div>
+          <div class="portal-arc arc-c"></div>
+          <div class="portal-core"></div>
+        </div>
+
+        <div class="meteor" id="meteor">
+          <div class="meteor-head"></div>
+          <div class="meteor-tail"></div>
+          <div class="meteor-tail tail-two"></div>
+        </div>
+
+        <div class="light-tunnel" id="tunnel"></div>
+        <div class="wave-ribbons" id="ribbons"></div>
+        <div class="shards" id="shards"></div>
+        <div class="lotus-bloom" id="lotus"></div>
+
+        <div class="possible-title" id="possibleTitle">Возможные подарки</div>
+        <div class="cards possible-cards" id="possibleCards"></div>
+
+        <div class="reward-focus" id="rewardFocus">
+          <div class="reward-aura"></div>
+          <div class="reward-card-slot" id="rewardCardSlot"></div>
+          <div class="reward-text">
+            <span>Сегодня тебе достаётся</span>
+            <div class="reward-copy" id="rewardCopy"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-button" id="backButton" type="button">На главную</button>
+    </section>
+  </div>
+
+  <audio id="bgMusic" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
